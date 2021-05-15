@@ -33,17 +33,16 @@
 	</distributionManagement>
 	<repositories>
 		<repository>
-			<id>osgeo</id>
-			<name>Geotools repository</name>
-			<url>https://repo.osgeo.org/repository/release/</url>
-		</repository>
-		<repository>
 			<id>matsim</id>
-			<url>http://dl.bintray.com/matsim/matsim</url>
+			<url>https://repo.matsim.org/repository/matsim</url>
 		</repository>
 		<repository>
-			<id>matsim-eth</id>
-			<url>http://dl.bintray.com/matsim-eth/matsim</url>
+			<id>osgeo</id>
+			<url>https://repo.osgeo.org/repository/release</url>
+		</repository>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
 		</repository>
 	</repositories>
 
@@ -70,6 +69,12 @@
 			<groupId>org.apache.commons</groupId>
 			<artifactId>commons-math3</artifactId>
 			<version>3.6.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.github.andrefmrocha</groupId>
+			<artifactId>av</artifactId>
+			<version>v1.0.2-matsim11-2</version>
 		</dependency>
 
 		<dependency>
@@ -114,7 +119,7 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>2.6</version>
+				<version>3.2.0</version>
 				<executions>
 					<execution>
 						<goals>
